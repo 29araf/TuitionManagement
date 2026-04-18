@@ -3,3 +3,12 @@
 ################################################################################
 
 /.vs/TuitionManagement/CopilotIndices/0.2.1634.3922
+/.vs/TuitionManagement/FileContentIndex
+/.vs/TuitionManagement/v17
+*.sqlite
+*.json
+/TuitionManagement/.vscode
+/TuitionManagement/public
+/TuitionManagement.API/.vs/TuitionManagement.API/copilot-chat/54a125d9/sessions
+/TuitionManagement.API/.vs/TuitionManagement.API
+/TuitionManagement.API/obj
