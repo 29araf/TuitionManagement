@@ -1,0 +1,131 @@
+.fees-container {
+  padding: 20px;
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .fees-filters {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 10px;
+    
+    .search-input,
+    .filter-select {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    
+    .search-input {
+      flex: 1;
+      
+      &:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      }
+    }
+    
+    .filter-select {
+      min-width: 150px;
+    }
+    
+    .btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+  
+  .fees-table {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      
+      thead {
+        background-color: #f5f5f5;
+        
+        th {
+          padding: 15px;
+          text-align: left;
+          color: #555;
+          font-weight: 600;
+          border-bottom: 2px solid #ddd;
+        }
+      }
+      
+      tbody {
+        tr {
+          border-bottom: 1px solid #ddd;
+          
+          &:hover {
+            background-color: #fafafa;
+          }
+          
+          td {
+            padding: 15px;
+            
+            &.empty {
+              text-align: center;
+              color: #999;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .fees-summary {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    h3 {
+      color: #555;
+      margin-top: 0;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      
+      .summary-item {
+        span {
+          display: block;
+          color: #999;
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        
+        p {
+          font-size: 24px;
+          font-weight: bold;
+          color: #007bff;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

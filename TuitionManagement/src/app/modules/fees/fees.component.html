@@ -1,0 +1,53 @@
+<div class="fees-container">
+  <h1>Fees Management</h1>
+  
+  <div class="fees-filters">
+    <input type="text" placeholder="Search by student name" class="search-input">
+    <select class="filter-select">
+      <option>All Status</option>
+      <option>Paid</option>
+      <option>Pending</option>
+      <option>Overdue</option>
+    </select>
+    <button class="btn btn-primary">Generate Invoice</button>
+  </div>
+  
+  <div class="fees-table">
+    <table>
+      <thead>
+        <tr>
+          <th>Student ID</th>
+          <th>Student Name</th>
+          <th>Fee Amount</th>
+          <th>Paid Amount</th>
+          <th>Status</th>
+          <th>Due Date</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="7" class="empty">No fee records found</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="fees-summary">
+    <h3>Summary</h3>
+    <div class="summary-grid">
+      <div class="summary-item">
+        <span>Total Revenue</span>
+        <p>$0</p>
+      </div>
+      <div class="summary-item">
+        <span>Total Pending</span>
+        <p>$0</p>
+      </div>
+      <div class="summary-item">
+        <span>Total Overdue</span>
+        <p>$0</p>
+      </div>
+    </div>
+  </div>
+</div>
